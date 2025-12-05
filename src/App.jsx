@@ -1,11 +1,12 @@
 import './App.css'
-import {Q1_counter} from "./Q1_counter/index.jsx";
+import {Q2_switch} from "./Questions/Q2_switch/index.jsx";
+import {Q3_todo} from "./Questions/Q3_todo/index.jsx";
 function App() {
 
 
     return (
         <>
-            <Q1_counter/>
+            <Q3_todo/>
         </>
     );
 }
