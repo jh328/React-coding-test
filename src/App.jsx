@@ -1,12 +1,12 @@
 import './App.css'
-import {Q2_switch} from "./Questions/Q2_switch/index.jsx";
-import {Q3_todo} from "./Questions/Q3_todo/index.jsx";
-function App() {
+import {Q5_search} from "./Questions/Q5_search/index.jsx";
 
+function App() {
+    const items = ['apple', 'banana', 'orange', 'watermelon'];
 
     return (
         <>
-            <Q3_todo/>
+            <Q5_search items={items}/>
         </>
     );
 }
