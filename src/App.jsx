@@ -1,12 +1,13 @@
 import './App.css'
-import {Q5_search} from "./Questions/Q5_search/index.jsx";
+import {Q6_drop} from "./Questions/Q6_drop/index.jsx";
 
 function App() {
-    const items = ['apple', 'banana', 'orange', 'watermelon'];
+    const data = ['1번', '2번', '3번', '4번', '5번'];
+
 
     return (
         <>
-            <Q5_search items={items}/>
+            <Q6_drop list={data}/>
         </>
     );
 }
