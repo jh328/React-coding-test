@@ -1,7 +1,6 @@
 import {useState} from "react";
 
 export const Q7_tabs = ({items}) => {
-
     const [currentTab, setCurrentTab] = useState(0);
 
     return (
@@ -17,13 +16,13 @@ export const Q7_tabs = ({items}) => {
                                 onClick={() => setCurrentTab(index)}
                                 style={{
                                     ...styles.tabButton,
-                                    backgroundColor: isActive ? 'black' : '#f0f0f0',
-                                    fontWeight: isActive ? 'bold' : 'normal',
+                                    backgroundColor: isActive ? 'black' : 'white'
                                 }}
                             >{item.name}</button>
                         )
                     })}
                 </div>
+
                 <div style={styles.tabContent}>
                     {items[currentTab].content}
                 </div>
@@ -48,7 +47,6 @@ const styles = {
         cursor: 'pointer',
         border: '1px solid #ccc',
         borderRadius: '5px',
-        backgroundColor: '#f0f0f0',
         transition: '0.3s',
     },
     tabContent: {
