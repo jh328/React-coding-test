@@ -1,10 +1,11 @@
 import './App.css'
-import {Q10_rating} from "./Questions/Q10_rating/index.jsx";
+import {Q11_filter} from "./Questions/Q11_filter/index.jsx";
 
 function App() {
+    const filters = ['사과', '딸기', '수박', '오렌지', '귤', '포도', '샤머', '망고', '키위', '바나나'];
 
     return (
-        <Q10_rating/>
+        <Q11_filter items={filters}/>
     );
 }
 
