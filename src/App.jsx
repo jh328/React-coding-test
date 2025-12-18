@@ -1,12 +1,17 @@
-import './App.css'
-import {Q11_filter} from "./Questions/Q11_filter/index.jsx";
-
+import "./App.css";
+import {Q12_multi_form} from "./Questions/Q12_multi-form/index.jsx";
 function App() {
-    const filters = ['사과', '딸기', '수박', '오렌지', '귤', '포도', '샤머', '망고', '키위', '바나나'];
+  const filters = [
+    "Apple",
+    "Strawberry",
+    "Watermelon",
+    "Orange",
+    "Mandarin",
+    "Grape",
+    "Banana",
+  ];
 
-    return (
-        <Q11_filter items={filters}/>
-    );
+  return <Q12_multi_form />;
 }
 
-export default App
+export default App;
